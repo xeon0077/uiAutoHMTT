@@ -1,0 +1,30 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1593333240295" stop="1593333240295">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1593333240295" status="broken" stop="1593333240295">
+      <name>test_mp_login</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>test_mp_login.py:9: in &lt;module&gt;
+    log = GetLog.get_logger()
+..\tools\get_log.py:25: in get_logger
+    encoding="utf-8")
+E:\Soft\python3.6\lib\logging\handlers.py:202: in __init__
+    BaseRotatingHandler.__init__(self, filename, 'a', encoding, delay)
+E:\Soft\python3.6\lib\logging\handlers.py:57: in __init__
+    logging.FileHandler.__init__(self, filename, mode, encoding, delay)
+E:\Soft\python3.6\lib\logging\__init__.py:1031: in __init__
+    StreamHandler.__init__(self, self._open())
+E:\Soft\python3.6\lib\logging\__init__.py:1060: in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+E   FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\uiAutoHMTT\\case\\log\\hmtt.log'</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
