@@ -1,9 +1,15 @@
 mp_login001:
   phone: "13812345678"
   code: "246810"
-  expect: "Xeon"
+  expect: Xeon
 
 mp_login002:
   phone: "13612345678"
   code: "246810"
   expect: "13612345678"
+mp_login003:
+  phone: "13612345678"
+  code: "246810"
+  expect: "13612345679"
+
+

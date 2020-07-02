@@ -1,6 +1,8 @@
 import page
 from base.base import Base
+from tools.get_log import GetLog
 
+log = GetLog.get_logger()
 
 class PageMpLogin(Base):
 
@@ -22,6 +24,8 @@ class PageMpLogin(Base):
 
     # 5.组合登录(测试业务层调用)
     def page_mp_login(self,phone,code):
+        log.info("正在调用登录组合业务方法,手机号:{},验证码;{}".format(phone, code))
+
         self.page_input_phone(phone)
         self.page_input_code(code)
         self.page_click_login_btn()

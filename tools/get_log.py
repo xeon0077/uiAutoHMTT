@@ -18,7 +18,7 @@ class GetLog:
             # 修改默认级别
             cls.__logger.setLevel(logging.INFO)
             # 获取处理器
-            th = logging.handlers.TimedRotatingFileHandler(filename="./log/hmtt.log",
+            th = logging.handlers.TimedRotatingFileHandler(filename="../log/hmtt.log",
                                                            when="midnight",
                                                            interval=1,
                                                            backupCount=3,
