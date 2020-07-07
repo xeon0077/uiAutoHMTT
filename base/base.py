@@ -11,7 +11,7 @@ class Base:
     # 初始化-->解决driver
     def __init__(self, driver):
         log.info("正在初始化driver对象: {}".format(driver))
-        self.drvier = driver
+        self.driver = driver
 
     # 查找元素 (输入,点击,获取)
     def base_find(self, loc, timeout=30, poll=0.5):
@@ -24,7 +24,7 @@ class Base:
         '''
         log.info("正在查找:{}元素,访问频率:{},超时时间:{}".format(loc, poll, timeout))
         # 重点:必须返回
-        return WebDriverWait(self.drvier,
+        return WebDriverWait(self.driver,
                              timeout=timeout,
                              poll_frequency=poll).until(lambda x: x.find_element(*loc))
         # 不能写driver.find_element,会执行
@@ -69,7 +69,7 @@ class Base:
     def base_get_img(self):
         log.error('错误!,正在截图操作')
         # 1.调用截图
-        self.drvier.get_screenshot_as_file("./image/err.png")
+        self.driver.get_screenshot_as_file("./image/err.png")
         #     2.将图片写入报告
         self.__write_img_report()
 
