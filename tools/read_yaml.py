@@ -10,7 +10,8 @@ def read_yaml(filename):
 
 
 if __name__ == '__main__':
-    print(read_yaml("mp_login.yaml"))
+    # print(read_yaml("mp_login.yaml"))
+    print(read_yaml("mis_login.yaml"))
 
 
 

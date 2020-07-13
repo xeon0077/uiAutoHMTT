@@ -1,0 +1,8 @@
+mp_article:
+  title: "bj18-test001"
+  content: "今天天气不错,晚上烧烤"
+  expect: "新增文章成功"
+
+
+
+

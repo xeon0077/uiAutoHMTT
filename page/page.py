@@ -1,3 +1,4 @@
+from page.page_mis_login import PageMisLogin
 from page.page_mp_article import PageMpArticle
 from page.page_mp_login import PageMpLogin
 
@@ -13,3 +14,7 @@ class Page:
     # 获取PageMpArticle对象
     def page_get_PageMpArticle(self):
         return PageMpArticle(self.driver)
+
+    # 获取PageMisLogin对象
+    def page_get_PageMisLogin(self):
+        return PageMisLogin(self.driver)
